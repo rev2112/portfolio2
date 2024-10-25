@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="project-header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fa fa-times-circle-o" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+                <img src="images/logo.png" class="logo">
+            </nav>
+            <section class="pro-sec">
+                <div class="pro-cont">
+                    <div class="project">
+                        <h2>PROJECTS</h2>
+                    </div>
+                    <div class="pro-subsec">
+                        <div class="subsec1">
+                            <div class="work">
+                                <img src="images/portfolio.png">
+                                <button id="vbtn"  class="vbtn">View</button>
+                                <div id="pro" class="pro">
+                                    <h3>TITLE           : PERSONAL PORTFOLIO</h3><br>
+                                    <p>ROLE             : UI/UX DESIGNER</p><br>
+                                    <p>DESCRIPTION      : A portfolio website is a curated ,online space that showcases
+                                                          your best work.A portfolio website can be used when
+                                                          applying for jobs or internships</p><br>
+                                    <p>RESPONSIBILITIES : Creating user friendly design for website and responsive
+                                                          web design and also creating wireframe & prototype for
+                                                          feedback & approval </p><br>
+                                    <p>TECHNOLOGIES     : Figma , HTML , CSS , Javascript</p><br>
+                                    <p>DURATION         : 10 days</p>
+                                    <i id="fa" class="fa fa-times-circle-o"></i>
+                                </div>
+                            </div>
+                            <div class="work">
+                                <img src="images/rev fas.png">
+                                <button id="vbtn1"  class="vbtn">View</button>
+                                <div id="pro1" class="pro">
+                                    <h3>TITLE           : FASHION WEBSITE</h3><br>
+                                    <p>ROLE             : UI/UX DESIGNER</p><br>
+                                    <p>DESCRIPTION      : A well-designed website can increase engagement, conversions, and customer loyalty.</p><br>
+                                    <p>RESPONSIBILITIES : Designers can take a  tests to ensure that the product is simple to use and fulfills its intended purpose.</p><br>
+                                    <p>TECHNOLOGIES     : User Research , Wireframe , Figma</p><br>
+                                    <p>DURATION         : 6 days</p>
+                                    <i id="fa1" class="fa fa-times-circle-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subsec2">
+                            <div class="work    ">
+                                <img src="images/sucus.png">
+                                <button id="vbtn2"  class="vbtn">View</button>
+                                <div id="pro2" class="pro">
+                                    <h3>TITLE           : FOOD APP </h3><br>
+                                    <p>ROLE             : UI/UX DESIGNER</p><br>
+                                    <p>DESCRIPTION      : Order with ease through our user-friendly app and track your delivery in real time.</p><br>
+                                    <p>RESPONSIBILITIES : Creating interactive prototypes and mockups that have a great impact on users</p><br>
+                                    <p>TECHNOLOGIES     : User Research , Wireframe , Figma </p><br>
+                                    <p>DURATION         : 20 days</p>
+                                    <i id="fa2" class="fa fa-times-circle-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+    
+        function openmenu(){
+            sidemenu.style.left= "0"
+        }
+        function closemenu(){
+            sidemenu.style.left= "-200px"
+        }
+       </script>
+
+<script>
+    
+var vbtn = document.getElementById("vbtn");
+var fa = document.getElementById("fa");
+var pro = document.getElementById("pro");
+
+
+vbtn.onclick = function() {
+    pro.style.display = "block"; 
+    vbtn.style.display = "none"; 
+}
+
+
+fa.onclick = function() {
+    pro.style.display = "none"; 
+    vbtn.style.display = "inline-block"; 
+}
+
+</script>
+
+<script>
+    
+    var vbtn1 = document.getElementById("vbtn1");
+    var fa1 = document.getElementById("fa1");
+    var pro1 = document.getElementById("pro1");
+    
+    
+    vbtn1.onclick = function() {
+        pro1.style.display = "block"; 
+        vbtn1.style.display = "none"; 
+    }
+    
+    
+    fa1.onclick = function() {
+        pro1.style.display = "none"; 
+        vbtn1.style.display = "inline-block"; 
+    }
+    
+    </script>
+
+<script>
+    
+    var vbtn2 = document.getElementById("vbtn2");
+    var fa2 = document.getElementById("fa2");
+    var pro2 = document.getElementById("pro2");
+    
+    
+    vbtn2.onclick = function() {
+        pro2.style.display = "block"; 
+        vbtn2.style.display = "none"; 
+    }
+    
+    
+    fa2.onclick = function() {
+        pro2.style.display = "none"; 
+        vbtn2.style.display = "inline-block"; 
+    }
+    
+    </script>
+    
+</body>
+</html>

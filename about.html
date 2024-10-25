@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="about-header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fa fa-times-circle-o" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+                <img src="images/logo.png" class="logo">
+            </nav>
+            <section class="main-sec"> 
+                <div class="info">
+                    <div class="about">
+                        <h2>ABOUT ME</h2>
+                        <p>I have a passion for improving user experience and have a knee eye for detail,ensuring every
+                            aspect of my design serves a purpose and enhances usability.My expertise lies in
+                            transforming complex problems into elegant ,intuitive designs and it lies in
+                            understandng user needs ,crafting user-centric designs &  collaborating effectively with
+                            cross-functional teams to deliver high-quality digital products.</p>
+                    </div>
+                    <div class="ui">
+                        <h3>UI/UX DESIGNER</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Neque nam mattis mollis leo imperdiet pulvinar etiam
+                            eget.</p>
+                    </div>
+                    <div class="personal">
+                        <div>
+                            <p>Birthday : 21 DECEMBER 2000</p><br>
+                            <p>Phone :7448873900 </p><br>
+                            <p>Email : revathimyni12@gmail.com</p><br>
+                        </div>
+                        <div>
+                            <p>Age : 23</p><br>
+                            <p>Degree : Bachelors</p><br>
+                            <p>City : Chennai</p><br>
+                        </div>
+                    </div>
+                    <div class="hob">
+                        <h3>HOBBIES</h3>
+                        <div class="icons">
+                            <div>
+                                <img src="images/dance.png">
+                                <h6>DANCE</h6>
+                            </div>
+                            <div>
+                                <img src="images/music.png">
+                                <h6>MUSIC</h6>
+                            </div>
+                            <div>
+                                <img src="images/drawing.png">
+                                <h6>DRAWING</h6>
+                            </div>
+                            <div>
+                                <img src="images/travel.png">
+                                <h6>TRAVEL</h6>
+                            </div>
+                            <div>
+                                <img src="images/game.png">
+                                <h6>GAMES</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+    
+        function openmenu(){
+            sidemenu.style.left= "0"
+        }
+        function closemenu(){
+            sidemenu.style.left= "-200px"
+        }
+       </script>
+</body>
+</html>
