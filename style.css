@@ -1,0 +1,754 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/*-----home-----*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:  #1a1a1a;
+    overflow-x: hidden;
+    background-position: center;
+    scroll-behavior: smooth;
+    background: #fff;
+
+}
+
+.container{
+    padding: 1%;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 5px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "Bona Nova SC", serif;
+    font-size: 22px;
+    font-weight: 900;
+}
+nav ul li{   
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#A5BDB0;
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.home-sec{
+    width:  100%;
+    height: 100vh;
+    border-bottom: 55px solid #fff;
+    border-right: 55px solid #fff;
+    border-left:  55px solid #fff;
+    border-top: 30px solid #fff;
+    background-image: url(images/homebg.png) ;
+}
+.home{  
+    font-size: 30px;
+}
+.home h1{
+    font-size: 55px;
+    font-weight: 600;
+    font-family: "Lemon", serif;
+    margin-top: 20px;
+}
+.home h3{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin-top: 20px;
+}
+/* .home-sec{
+    display: flex;
+} */
+.home-part{
+    width: 70%;
+    position: absolute;
+    left: 30%;
+    top: 38%;
+}
+.rev{
+    width: 30%;
+} 
+
+.rev img{
+    position: absolute;
+    height: 357px; 
+    width: 307px;
+    right: 247px;
+    top: 40%;
+} 
+.btn{
+    display: block;
+    margin: 70px 0;
+    width: fit-content;
+    padding: 14px 60px;
+    border-radius: 30px;
+    text-decoration: none;
+    background:#fff;
+    color: #000;
+    font-size: 20px;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 300;
+    border: 1px solid #fff ;
+}
+
+/*-----about-----*/
+.main-sec {
+    display: flex;
+    width:  100%;
+    height: 122vh;
+    border-bottom: 55px solid #fff;
+    border-right: 55px solid #fff;
+    border-left:  55px solid #fff;
+    border-top: 30px solid #fff;
+    background-image: url(images/homebg.png) ;
+}
+.about h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Bona Nova SC", serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.about p{
+    margin-top: 45px;
+    font-size: 14px;
+    line-height: 2;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.ui h3{
+   margin-top: 50px;
+   font-family: "Bona Nova SC", serif;
+   font-size: 22px;
+   font-weight: 800;
+   color: #000;
+   margin-left: 20px;
+}
+.ui p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.personal{
+    list-style: none;
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.hob h3{
+    margin-top: 20px;
+    font-family: "Bona Nova SC", serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #000;
+    margin-left: 20px;
+}
+.icons{
+    display: flex;
+    gap: 30px;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.icons h6{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}
+.icons div img{
+    width: 40px;
+    height: 40px;
+}
+.icons div{
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    height: 105px;
+    width: 123px;
+    color: #000;
+}
+
+
+
+/*-----skills-----*/
+.skill-sec{
+    width: 100%;
+    height: 120vh;
+    border-bottom: 55px solid #fff;
+    border-right: 55px solid #fff;
+    border-left:  55px solid #fff;
+    border-top: 30px solid #fff;
+    background-image: url(images/homebg.png) ;
+}
+.skill-part{
+    display: flex;
+}
+.skill-left{
+    flex-basis: 40%;
+    position: relative;
+}
+.skill-right{
+    flex-basis: 50%;
+    position: relative;
+}
+.skills h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Bona Nova SC", serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.skills p{
+    margin-top: 45px;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.ui-sk h3, .ux-sk h3{
+    text-align: center;
+    margin-top: 35px;
+    color: #000;
+    font-family: "Bona Nova SC", serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+.per img{
+    height: 40px;
+    width: 40px;
+}
+.per div{
+    padding: 10px;
+    text-align: center;
+}
+.per{
+    display: grid;
+    grid-template-columns: rep(fit-content, minmax(100px, 1fr));
+    grid-gap: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.per h5{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.edu h3{    
+    text-align: center;
+    color: #000;
+    margin-top: 35px;
+    font-family: "Bona Nova SC", serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+table {
+   width: 80%;
+   border-collapse: collapse;
+   margin: auto;
+   margin-top: 35px;
+   font-family: "Inter", sans-serif;
+}
+table,th,td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th,td {
+    padding: 10px ;
+}
+
+
+/*-----project-----*/
+
+.pro-sec{
+    display: flex;
+    width:  100%;
+    height: 142vh;
+    border-bottom: 55px solid #fff;
+    border-right: 55px solid #fff;
+    border-left:  55px solid #fff;
+    border-top: 30px solid #fff;
+    background-image: url(images/homebg.png) ;
+    
+}
+.pro-cont{
+    width: 100%;
+}
+.project h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Bona Nova SC", serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.subsec1{
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subsec2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.subsec2 .work img{
+    width: 100%;
+    height: 315px;
+    display: block;
+    border-radius: 10px;
+}
+.subsec2 .pro{
+    width: 100%;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+   width: 100%;
+   height: 315px;
+   display: block;
+   border-radius: 10px;
+}
+
+.pro{
+    width: 100%;
+    height: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    background: linear-gradient(#A3CFCD,#7B5C86);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: start;
+    transition: height 0.5s;
+    color: #000;
+}
+.pro h3{
+    font-size: 14px;
+    font-family: "Bona Nova SC", serif;
+    color:  #9e488c;
+    text-align: center;
+}
+.work:hover .pro{
+    height: 100%;
+}
+.work .vbtn{
+    display: block;
+    width: fit-content;
+    border: 1px solid #000;
+    text-decoration: none;
+    background: transparent;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Inter", sans-serif;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.work .vbtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pro .fa{
+    color: #000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+
+
+
+/*-----contact-----*/
+.cont-sec{  
+    width: 100% ;
+    height:  120vh;
+    border-bottom: 55px solid #fff;
+    border-right: 55px solid #fff;
+    border-left:  55px solid #fff;
+    border-top: 30px solid #fff;
+    background-image: url(images/homebg.png) ; 
+}
+.sub-title h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Bona Nova SC", serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.detail h3{
+    color: #000;
+    margin-top: 30px;
+    font-family: "Bona Nova SC", serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+.detail p{
+    font-weight: 500;
+    margin-top: 45px;
+    font-family: "Inter", sans-serif;
+}
+.cont-info{
+    margin-top: 20px;
+    position: relative;
+}
+.cont-info div{
+    display: flex;
+    margin-bottom: 25px;
+}
+.cont-info img{
+    height: 50px;
+    width: 50px;
+}
+.cont-info p{
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+   
+}
+.cont-info div p{
+    margin-top: 15px;
+}
+.detail1 h3{
+    color: #000;
+    margin-top: 30px;
+    font-family: "Bona Nova SC", serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+.cont-items{
+    width: 100%;
+    display: flex;
+}  
+.cont-left{
+    flex-basis: 50%;
+    position: relative;
+    left: 10%;
+   
+}
+.cont-right{
+    flex-basis: 50%;
+    position: relative;
+    left: 10%;
+}
+.cont-right form{
+    width: 60%;
+}
+.user-info{
+    margin-top: 25px;
+}
+form input ,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #fff;
+    padding: 12px;
+    margin: 25px 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    border-radius: 10px;
+    color: #000;
+}
+.btn.btn2{
+    padding: 10px 20px;
+    /* border-radius: 18px; */
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#msg{
+    color: #61b752;
+    display: block;
+    margin-top: -45px;
+}
+
+
+
+/*----------small screens----------*/
+nav .fa{
+    display: none;
+}
+.work .vbtn{
+    display: none;
+}
+.pro .fa{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .container{
+        padding: 5%;
+    }
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+
+    /*-----home-----*/
+    .home-sec{
+    display: block;
+    border-bottom: 20px solid #fff;
+    border-right: 20px solid #fff;
+    border-left:  20px solid #fff;
+    border-top: 5px solid #fff;
+   height: 100vh;
+    }
+    .rev img{
+        height: 400px;
+        width: 300px;
+        right: 20%;
+        top:  145px;
+    }
+    .home-part{
+       margin-top: 50%;
+       left: 25%;
+    }
+    .home{
+        margin-top: 20%;
+    }
+    .home h3{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .home h1{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    nav .fa{
+        display: block;
+        font-size: 25px;
+       
+    }
+    nav ul{
+        background:#fff;
+        position: fixed;
+        top: 0;
+        left: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: left 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        font-size: 18px;
+    }
+    nav ul .fa{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        font-size: 24px;
+        
+    }
+    /*-----about-----*/
+       .info{
+        width: 100%;
+        padding: 10px;
+    }
+    .main-sec{
+        display: block;
+        border-bottom: 20px solid #fff;
+        border-right: 20px solid #fff;
+        border-left:  20px solid #fff;
+        border-top: 5px solid #fff;
+       height: 128vh;
+    }
+    .icons{
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .icons div {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        height: 70px;
+        width: 70px;
+    }
+    .icons h6 {
+        font-size: 8px;
+    }
+    .icons div img {
+        width: 28px;
+        height: 28px;
+    }
+ 
+   
+
+
+    /*-----skills-----*/
+    .skill-sec{
+         border-bottom: 20px solid #fff;
+         border-right: 20px solid #fff;
+         border-left:  20px solid #fff;
+         border-top: 5px solid #fff;
+         height: 90vh;
+    }
+    .skill-part{
+        display: block;
+    }
+    .skill-cont{
+        width: 100%;
+    }
+    .per{
+        grid-gap: 15px;
+    }
+    .per img {
+        height: 28px;
+        width: 28px;
+    }
+    .per h5{
+        font-size: 8px;    
+    }
+    .per div {
+        padding: 5px;
+    }
+    .edu-sec{
+        overflow-x: scroll;
+    }
+    th, td {
+        padding: 5px;
+    }
+    table{
+        font-size: 10px;
+    }
+
+
+    /*-----project-----*/
+    .pro-sec{
+        display: block;
+        border-bottom: 20px solid #fff;
+        border-right: 20px solid #fff;
+        border-left:  20px solid #fff;
+        border-top: 5px solid #fff;
+        height: 128vh;
+    }
+    .pro-cont{
+        width: 100%;
+    }
+    .subsec1, .subsec2{
+        display: block;
+    }
+    .subsec2{
+        margin-top: 0;
+    }
+    .work img{
+        width: 100%;
+    }
+    .work{
+        margin-bottom: 20px;
+    }
+
+    .view{
+        display: block;
+        margin-top: 20%;
+    }
+    .work .btn{
+        display: block;
+        margin-top: 0;
+    }
+    .pro .fa{
+        display: block;
+    }
+    .pro h3{
+        padding: 20px;
+    }
+
+
+    /*-----contact-----*/
+    .cont-sec, .cont-items{
+        display: block;
+    }
+    .cont-sec{
+        border-bottom: 20px solid #fff;
+        border-right: 20px solid #fff;
+        border-left:  20px solid #fff;
+        border-top: 5px solid #fff;
+        height: 128vh;
+        position: relative;
+    }
+    .cont-items{
+        position: absolute;
+        left: 20px;
+    }
+    .cont-left ,.cont-right{
+        position: revert;
+    }
+    .contact-cont{
+        width: 100%;
+    }
+    .cont-rightsub{
+        width: 100%;
+    }
+    .cont-right form {
+        width:85%;
+    }
+}

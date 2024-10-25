@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="contact-header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fa fa-times-circle-o" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+                <img src="images/logo.png" class="logo">
+            </nav>
+            <section class="cont-sec">
+                <div class="contact-cont">
+                    <div class="sub-title">
+                        <h2>CONTACT</h2>
+                    </div>
+                    <div class="cont-items">
+                    <div class="cont-left">
+                        <div class="detail">
+                            <h3>GET IN TOUCH</h3>
+                            <p>I'm very approachable and <br> would love to speak to you. <br> Feel free to call ,send me <br> an email.</p>
+                        </div>
+                            <div class="cont-info">
+                                <div>
+                                    <img src="images/call.png">
+                                    <p>7448873900</p>
+                                </div>
+                                <div>
+                                   <img src="images/mail.png">
+                                   <p>revathimyni12@gmail.com</p>
+                                </div>
+                                <div>
+                                    <img src="images/location.png">
+                                    <p>No.7/84,J.J Nagar,Agaram Then Tambaram,  <br>Chennai-600077.</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="cont-right">
+                        <div class="detail1">
+                            <h3>SEND ME A MESSAGE</h3>
+                        </div>
+                        <div class="cont-rightsub">
+                            <div class="user-info">
+                                <form name="submit-to-google-sheet">
+                                    <input type="text" name="Name" placeholder="Name" required>
+                                    <input type="email" name="Email" placeholder="Email" required>
+                                    <input type="text" name="Subject" placeholder="Subject" required>
+                                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                                    <button type="submit" class="btn btn2">Send message</button>
+                                </form>
+                                <span id="msg"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+    
+        function openmenu(){
+            sidemenu.style.left= "0"
+        }
+        function closemenu(){
+            sidemenu.style.left= "-200px"
+        }
+       </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwBxU3nubBmnRiU4BucH0S4D5bG1hL4aABt0ZEwvj68lFMmZvgCSYWNyt5PTPrKaaam/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+            })
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+      </script>
+</body>
+</html>
